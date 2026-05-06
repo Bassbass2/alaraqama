@@ -6,6 +6,7 @@
 <title>الأرقام | صحيفة العملات الرقمية والذكاء الاصطناعي</title>
 <meta name="description" content="صحيفتك المتخصصة في أخبار العملات الرقمية والذكاء الاصطناعي والتقنيات المالية الحديثة">
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Tajawal',sans-serif}
 body{background:#0a0e1a;color:#e8eaed;line-height:1.7}
@@ -370,6 +371,18 @@ footer .logo{font-size:28px;margin-bottom:10px}
     <div class="copyright">© 2026 الأرقام – جميع الحقوق محفوظة</div>
   </div>
 </footer>
+
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+</script>
 
 </body>
 </html>
